@@ -1,10 +1,10 @@
 {
-  "name": "ignite-native-base-boilerplate",
-  "description": "Native Base's Ignite boilerplate for React Native",
+  "name": "ignite-smooth-terminal",
+  "description": "Smooth Terminal Ignite boilerplate for React Native",
   "license": "MIT",
-  "repository": "GeekyAnts/ignite-native-base-boilerplate",
-  "homepage": "https://github.com/GeekyAnts/ignite-native-base-boilerplate",
-  "version": "2.1.0",
+  "repository": "dailydrip/ignite-native-base-boilerplate",
+  "homepage": "https://github.com/dailydrip/ignite-smooth-terminal",
+  "version": "0.1.0",
   "files": [
     "boilerplate",
     "commands",

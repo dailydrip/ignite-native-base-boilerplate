@@ -1,6 +1,9 @@
 # ignite-native-base-boilerplate v2
 
-![NativeBase Ignite Boilerplate Preview](./demo-examples/ios-full-app.gif)
+This is a fork of
+[ignite-native-base-boilerplate](https://github.com/GeekyAnts/ignite-native-base-boilerplate).
+We updated dependencies, and our goal is to mantain all the libraries up to date
++ add some niceties we are using on Smooth Terminal.
 
 ## Quick Start
 
@@ -13,7 +16,8 @@ ignite new appname --boilerplate native-base-boilerplate
 You can also change the React Native version, just keep in mind, we may not have tested this just yet.
 
 ```sh
-ignite new appname --react-native-version 0.46.4 --boilerplate native-base-boilerplate
+ignite new appname --react-native-version 0.55 --boilerplate
+ignite-smooth-terminal
 ```
 
 By default we'll ask you some questions during install as to which features you'd like.  If you just want them all, you can skip the questions:
