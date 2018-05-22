@@ -1,4 +1,4 @@
-# ignite-native-base-boilerplate v2
+# ignite-smooth-terminal
 
 This is a fork of
 [ignite-native-base-boilerplate](https://github.com/GeekyAnts/ignite-native-base-boilerplate).
