@@ -2,7 +2,7 @@ import { put } from 'redux-saga/effects'
 import { login } from '../../App/Sagas/LoginSagas'
 import LoginActions from '../../App/Redux/LoginRedux'
 
-const stepper = (fn) => (mock) => fn.next(mock).value
+const stepper = fn => mock => fn.next(mock).value
 
 test('success', () => {
   const mock = { username: 'a', password: 'b' }

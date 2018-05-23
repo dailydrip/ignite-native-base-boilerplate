@@ -7,18 +7,17 @@ import AlertMessage from '../Components/AlertMessage'
 import styles from './Styles/ListviewExampleStyles'
 
 class ListviewExample extends React.Component {
-
   constructor (props) {
     super(props)
-    /* ***********************************************************
-    * Teach datasource how to detect if rows are different
-    * Make this function fast!  Perhaps something like:
-    *   (r1, r2) => r1.id !== r2.id}
-    *************************************************************/
+    /************************************************************
+     * Teach datasource how to detect if rows are different
+     * Make this function fast!  Perhaps something like:
+     *   (r1, r2) => r1.id !== r2.id}
+     *************************************************************/
     const rowHasChanged = (r1, r2) => r1 !== r2
 
     // DataSource configured
-    const ds = new ListView.DataSource({rowHasChanged})
+    const ds = new ListView.DataSource({ rowHasChanged })
 
     // Datasource is always in state
     this.state = {
@@ -41,15 +40,15 @@ class ListviewExample extends React.Component {
     )
   }
 
-  /* ***********************************************************
-  * If your datasource is driven by Redux, you'll need to
-  * reset it when new data arrives.
-  * DO NOT! place `cloneWithRows` inside of render, since render
-  * is called very often, and should remain fast!  Just replace
-  * state's datasource on newProps.
-  *
-  * e.g.
-  *************************************************************/
+  /************************************************************
+   * If your datasource is driven by Redux, you'll need to
+   * reset it when new data arrives.
+   * DO NOT! place `cloneWithRows` inside of render, since render
+   * is called very often, and should remain fast!  Just replace
+   * state's datasource on newProps.
+   *
+   * e.g.
+   *************************************************************/
   componentWillReceiveProps (newProps) {
     if (newProps.results) {
       this.setState({
@@ -67,7 +66,10 @@ class ListviewExample extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-        <AlertMessage title='Nothing to See Here, Move Along' show={this.noRowData()} />
+        <AlertMessage
+          title='Nothing to See Here, Move Along'
+          show={this.noRowData()}
+        />
         <ListView
           contentContainerStyle={styles.listContent}
           dataSource={this.state.dataSource}
@@ -80,7 +82,7 @@ class ListviewExample extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     searchTerm: state.search.searchTerm,
     results: state.search.results

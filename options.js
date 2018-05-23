@@ -19,7 +19,7 @@ const questions = [
     message: 'What internationalization library will you use?',
     type: 'list',
     choices: ['none', 'react-native-i18n']
-  },
+  }
   // {
   //   name: 'animatable',
   //   message: 'What animation library will you use?',
