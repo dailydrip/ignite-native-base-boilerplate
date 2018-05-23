@@ -1,5 +1,6 @@
 # ignite-smooth-terminal
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![npm version](https://badge.fury.io/js/ignite-smooth-terminal.svg)](https://www.npmjs.com/package/ignite-smooth-terminal)
 [![Dependencies
 Status](https://david-dm.org/dailydrip/ignite-smooth-terminal.svg)](https://david-dm.org/dailydrip/ignite-smooth-terminal)
