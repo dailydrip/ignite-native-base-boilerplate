@@ -3,12 +3,14 @@ import { DrawerNavigator } from "react-navigation";
 import ListviewExample from "../Containers/ListviewExample";
 import CardExample from "../Containers/CardExample";
 import DrawerContent from "../Containers/DrawerContent";
+import GraphQLScreen from "../Containers/GraphQLScreen";
 
 import styles from "./Styles/NavigationStyles";
 
 const NavigationDrawer = DrawerNavigator(
   {
     ListviewExample: { screen: ListviewExample },
+    GraphQLScreen: { screen: GraphQLScreen },
     CardExample: { screen: CardExample }
   },
   {
