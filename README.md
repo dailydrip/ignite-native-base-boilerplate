@@ -30,3 +30,26 @@ By default you can use anything you want from
 
 You can use [Reactotron](https://github.com/infinitered/reactotron) to help you
 debug your app.
+
+## Libraries
+
+Main libraries and version this boilerplate is using:
+
+```javascript
+  "react-navigation": "^1.5.8",
+  "react-redux": "^5.0.7",
+  "redux": "4.0.0",
+  "native-base": "2.4.5",
+  "redux-persist": "^5.9.1",
+  "redux-saga": "v1.0.0-beta.1",
+  "@dailydrip/apollo-absinthe-upload-link": "^1.0.3",
+  "graphql": "^0.13.2",
+  "graphql-tag": "^2.9.2",
+  "react-apollo": "^2.1.4",
+  "apollo-cache-inmemory": "^1.2.1",
+  "apollo-client": "^2.3.1",
+  "apollo-link": "^1.2.2",
+```
+
+To check other versions check the
+[package.json.ejs](./boilerplate/package.json.ejs).

@@ -8,27 +8,41 @@ import ReduxPersist from "../Config/ReduxPersist";
 // Styles
 import styles from "./Styles/RootContainerStyles";
 
-class RootContainer extends Component {
-	componentDidMount() {
-		// if redux persist is not active fire startup action
-		if (!ReduxPersist.active) {
-			this.props.startup();
-		}
-	}
+if (__DEV__ && console.tron) {
+  console.tron.use(tron => ({
+    features: {
+      plog: (title, value) => {
+        console.tron.display({
+          name: `🔴 Prettier Log 🔴`,
+          preview: title,
+          value
+        });
+      }
+    }
+  }));
+}
 
-	render() {
-		return (
-			<View style={styles.applicationView}>
-				<StatusBar barStyle="light-content" />
-				<ReduxNavigation />
-			</View>
-		);
-	}
+class RootContainer extends Component {
+  componentDidMount() {
+    // if redux persist is not active fire startup action
+    if (!ReduxPersist.active) {
+      this.props.startup();
+    }
+  }
+
+  render() {
+    return (
+      <View style={styles.applicationView}>
+        <StatusBar barStyle="light-content" />
+        <ReduxNavigation />
+      </View>
+    );
+  }
 }
 
 // wraps dispatch to create nicer functions to call within our component
 const mapDispatchToProps = dispatch => ({
-	startup: () => dispatch(StartupActions.startup()),
+  startup: () => dispatch(StartupActions.startup())
 });
 
 export default connect(null, mapDispatchToProps)(RootContainer);
