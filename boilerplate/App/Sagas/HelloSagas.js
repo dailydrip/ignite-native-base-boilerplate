@@ -8,7 +8,7 @@ export function* getHello({ payload }) {
 
   const query = Queries.getHello();
   const { data } = yield call(client().query, query);
-  console.tron.plog("getOrdersFromStore data", { data });
+  console.tron.plog("getHello data", { data });
 
   if (data.hello) {
     yield put(HelloActions.gotHello(data.hello));
