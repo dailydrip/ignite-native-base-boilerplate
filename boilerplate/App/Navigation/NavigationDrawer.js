@@ -1,11 +1,9 @@
-import React from "react";
-import { DrawerNavigator } from "react-navigation";
-import ListviewExample from "../Containers/ListviewExample";
-import CardExample from "../Containers/CardExample";
-import DrawerContent from "../Containers/DrawerContent";
-import GraphQLScreen from "../Containers/GraphQLScreen";
-
-import styles from "./Styles/NavigationStyles";
+import React from 'react'
+import { DrawerNavigator } from 'react-navigation'
+import ListviewExample from '../Containers/ListviewExample'
+import CardExample from '../Containers/CardExample'
+import DrawerContent from '../Containers/DrawerContent'
+import GraphQLScreen from '../Containers/GraphQLScreen'
 
 const NavigationDrawer = DrawerNavigator(
   {
@@ -14,12 +12,12 @@ const NavigationDrawer = DrawerNavigator(
     CardExample: { screen: CardExample }
   },
   {
-    drawerOpenRoute: "DrawerOpen",
-    drawerCloseRoute: "DrawerClose",
-    drawerToggleRoute: "DrawerToggle",
-    initialRouteName: "ListviewExample",
+    drawerOpenRoute: 'DrawerOpen',
+    drawerCloseRoute: 'DrawerClose',
+    drawerToggleRoute: 'DrawerToggle',
+    initialRouteName: 'ListviewExample',
     contentComponent: props => <DrawerContent {...props} />
   }
-);
+)
 
-export default NavigationDrawer;
+export default NavigationDrawer

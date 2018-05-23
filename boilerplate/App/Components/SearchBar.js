@@ -17,7 +17,11 @@ export default class SearchBar extends Component {
     const onSubmitEditing = () => onSearch(searchTerm)
     return (
       <View style={styles.container}>
-        <Icon name='search' size={Metrics.icons.tiny} style={styles.searchIcon} />
+        <Icon
+          name='search'
+          size={Metrics.icons.tiny}
+          style={styles.searchIcon}
+        />
         <TextInput
           ref='searchText'
           autoFocus
