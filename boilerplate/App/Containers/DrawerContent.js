@@ -1,6 +1,6 @@
+import { Content, List, ListItem, Text, View } from 'native-base'
 import React, { Component } from 'react'
-import { ScrollView, Image, BackHandler } from 'react-native'
-import { List, ListItem, Text, View, Content } from 'native-base'
+import { Image } from 'react-native'
 
 import styles from './Styles/DrawerContentStyles'
 import { Images } from '../Themes'

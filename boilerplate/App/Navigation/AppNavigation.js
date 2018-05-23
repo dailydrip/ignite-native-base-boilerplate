@@ -1,11 +1,10 @@
-import React from 'react'
 import { StackNavigator } from 'react-navigation'
-import styles from './Styles/NavigationStyles'
+
+import LaunchScreen from '../Containers/LaunchScreen'
+import Login from '../Containers/LoginScreen'
+import NavigationDrawer from './NavigationDrawer'
 
 // screens identified by the router
-import Login from '../Containers/LoginScreen'
-import LaunchScreen from '../Containers/LaunchScreen'
-import NavigationDrawer from './NavigationDrawer'
 
 const PrimaryNav = StackNavigator(
   {

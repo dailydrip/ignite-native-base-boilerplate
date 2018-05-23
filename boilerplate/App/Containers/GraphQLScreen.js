@@ -1,24 +1,19 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Image, BackHandler } from 'react-native'
 import {
-  Card,
-  CardItem,
-  Text,
-  View,
-  Thumbnail,
-  Container,
-  Header,
-  Content,
-  Title,
+  Body,
   Button,
+  Container,
+  Content,
+  Header,
+  Icon,
   Left,
   Right,
-  Body,
-  Icon
+  Text,
+  Title
 } from 'native-base'
-// import Icon from 'react-native-vector-icons/Ionicons'
+import React from 'react'
 import { withApollo } from 'react-apollo'
+import { connect } from 'react-redux'
+// import Icon from 'react-native-vector-icons/Ionicons'
 
 class GraphQLScreen extends React.Component {
   componentDidMount () {

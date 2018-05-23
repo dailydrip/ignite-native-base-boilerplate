@@ -1,23 +1,20 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import {
-  View,
-  ScrollView,
-  Text,
-  TextInput,
-  TouchableOpacity,
   Image,
   Keyboard,
-  LayoutAnimation
+  LayoutAnimation,
+  ScrollView,
+  View
 } from 'react-native'
 import { connect } from 'react-redux'
+
+import LoginActions from '../Redux/LoginRedux'
 import Styles from './Styles/LoginScreenStyles'
 import { Images, Metrics } from '../Themes'
-import LoginActions from '../Redux/LoginRedux'
 import {
   Button,
   Text as NBText,
-  Contant,
   Form,
   Item,
   Input,
@@ -111,9 +108,6 @@ class LoginScreen extends React.Component {
     const { username, password } = this.state
     const { fetching } = this.props
     const editable = !fetching
-    const textInputStyle = editable
-      ? Styles.textInput
-      : Styles.textInputReadonly
     return (
       <ScrollView
         contentContainerStyle={{ justifyContent: 'center' }}

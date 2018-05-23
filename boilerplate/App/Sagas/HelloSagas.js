@@ -1,5 +1,5 @@
 import { call, put } from 'redux-saga/effects'
-import { path } from 'ramda'
+
 import HelloActions from '../Redux/HelloRedux'
 import * as Queries from '../GraphQL/queries'
 

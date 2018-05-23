@@ -1,22 +1,20 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Image, BackHandler } from 'react-native'
 import {
+  Body,
+  Button,
   Card,
   CardItem,
-  Text,
-  View,
-  Thumbnail,
   Container,
-  Header,
   Content,
-  Title,
-  Button,
+  Header,
+  Icon,
   Left,
   Right,
-  Body,
-  Icon
+  Text,
+  Title
 } from 'native-base'
+import React from 'react'
+import { BackHandler, Image } from 'react-native'
+import { connect } from 'react-redux'
 // import Icon from 'react-native-vector-icons/Ionicons'
 
 class CardExample extends React.Component {

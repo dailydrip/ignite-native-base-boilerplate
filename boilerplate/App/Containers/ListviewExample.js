@@ -1,20 +1,18 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { FlatList } from 'react-native'
 import {
-  List,
-  ListItem,
-  Text,
-  View,
+  Body,
+  Button,
   Container,
   Header,
-  Title,
-  Button,
+  Icon,
   Left,
+  ListItem,
   Right,
-  Body,
-  Icon
+  Text,
+  Title
 } from 'native-base'
+import React from 'react'
+import { FlatList } from 'react-native'
+import { connect } from 'react-redux'
 // import Icon from 'react-native-vector-icons/Ionicons'
 
 const dataObjects = [

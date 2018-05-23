@@ -5,8 +5,6 @@ import CardExample from '../Containers/CardExample'
 import DrawerContent from '../Containers/DrawerContent'
 import GraphQLScreen from '../Containers/GraphQLScreen'
 
-import styles from './Styles/NavigationStyles'
-
 const NavigationDrawer = DrawerNavigator(
   {
     ListviewExample: { screen: ListviewExample },
