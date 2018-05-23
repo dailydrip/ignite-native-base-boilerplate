@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "dailydrip/ignite-native-base-boilerplate",
   "homepage": "https://github.com/dailydrip/ignite-smooth-terminal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "boilerplate",
     "commands",
