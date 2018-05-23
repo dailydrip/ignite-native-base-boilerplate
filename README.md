@@ -1,5 +1,11 @@
 # ignite-smooth-terminal
 
+[![npm version](https://badge.fury.io/js/ignite-smooth-terminal.svg)](https://www.npmjs.com/package/ignite-smooth-terminal)
+[![Dependencies
+Status](https://david-dm.org/dailydrip/ignite-smooth-terminal.svg)](https://david-dm.org/dailydrip/ignite-smooth-terminal)
+
+
+
 This is a fork of
 [ignite-native-base-boilerplate](https://github.com/GeekyAnts/ignite-native-base-boilerplate).
 We updated dependencies, and our goal is to mantain all the libraries up to date
@@ -10,14 +16,13 @@ and add some niceties we are using on Smooth Terminal.
 You can run the following command to create the boilerplate, provided you have [Ignite CLI](https://github.com/infinitered/ignite) installed.
 
 ```
-ignite new appname --boilerplate native-base-boilerplate
+ignite new appname --boilerplate ignite-smooth-terminal
 ```
 
 You can also change the React Native version, just keep in mind, we may not have tested this just yet.
 
 ```sh
-ignite new appname --react-native-version 0.55 --boilerplate
-ignite-smooth-terminal
+ignite new appname --react-native-version 0.55 --boilerplate ignite-smooth-terminal
 ```
 
 ## Usage with Ignite
